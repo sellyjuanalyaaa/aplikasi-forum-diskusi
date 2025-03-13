@@ -5,7 +5,7 @@ include 'class/koneksi.php';
 require_once 'class/Topik.php';
 
 $topics = new Topik();
-$topic_id = $topic['id'];
+
 
 if (isset($_GET['id'])) {
     $topic = $topics->getTopicById($_GET['id']);
