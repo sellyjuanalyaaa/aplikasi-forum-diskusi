@@ -38,18 +38,14 @@ CREATE TABLE comments (
     topic_id INT,
     user_id INT,
     content TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (topic_id) REFERENCES topics(id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE votes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     comment_id INT,
     user_id INT,
-    vote_type ENUM('up', 'down') NOT NULL,
-    FOREIGN KEY (comment_id) REFERENCES comments(id),
-    FOREIGN KEY (user_id) REFERENCES users(id)
+    vote_type ENUM('up', 'down') NOT NULL
 );
 ```
 
