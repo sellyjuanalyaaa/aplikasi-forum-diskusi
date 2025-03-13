@@ -1,6 +1,6 @@
 # README - Struktur Forum Diskusi
 
-Link Github = 
+Link Github = https://github.com/sellyjuanalyaaa/aplikasi-forum-diskusi
 
 ## Struktur Folder dan Kegunaan
 
